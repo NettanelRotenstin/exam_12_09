@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="manageSoldiers.css">
+    <script src="manageSoldiers.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main-page">
+        <div class="main-up">
+            <div class="up-up">
+                <H3>BATTALION FORCE MANAGEMENT</H3>
+                <Hr>
+                </Hr>
+            </div>
+            <div class="up-down">
+                <div class="div-input">
+                    <input type="text" name="inp-name" placeholder="Full Name">
+                    <input type="text" name="inp-rank" placeholder="Rank">
+                    <input type="text" name="inp-position" placeholder="Position">
+                    <input type="text" name="inp-platoon" placeholder="Platoon">
+                    <input type="text" name="inp-time" placeholder="Mission Time (seconds)">
+                    <select name="sel" id="sel">
+                        <option value="Active">Active</option>
+                        <option value="Reserve">Reserve</option>
+                        <option value="Retired">Retired</option>
+                    </select>
+                    <button class="btn-add-soldier">Add Personnel</button>
+
+                </div>
+            </div>
+        </div>
+        <div class="main-down">
+            <div class="down-up">
+                <H3>FORCES OVERVIEW</H3>
+                <Hr>
+                </Hr>
+            </div>
+            <div class="down-down">
+                <table>
+
+                    <tr class="headers">
+                        <th>Full Nane:</th>
+                        <th>Rank</th>
+                        <th>Position</th>
+                        <th>Platoon</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+
+                    </tr>
+
+                    <div class="table-add">
+
+                    </div>
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="edit-page">
+        <div class="up-down">
+            <div class="div-input">
+                <input type="text" name="inp-name" placeholder="Full Name">
+                <input type="text" name="inp-rank" placeholder="Rank">
+                <input type="text" name="inp-position" placeholder="Position">
+                <input type="text" name="inp-platoon" placeholder="Platoon">
+                <input type="text" name="inp-time" placeholder="Mission Time (seconds)">
+                <select name="sel" id="sel">
+                    <option value="Active">Active</option>
+                    <option value="Reserve">Reserve</option>
+                    <option value="Retired">Retired</option>
+                </select>
+                <button class="btn-save">Save Changes</button>
+                <button class="btn-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
