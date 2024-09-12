@@ -17,7 +17,7 @@ const mainPage = document.querySelector(`.main-page`)
 
 const editPage = document.querySelector(`.edit-page`)
 
-function addSoldierFunc() {
+function addSoldierFunc() { 
     const obj = JSON.parse(localStorage.soldiers || [])
     obj.push({ name: inpName.value, rank: inpRank.value, position: inpPosition.value, platoon: inpPlatoon.value, time: inpTime.value, status: inpStatus.value })
     localStorage.soldiers = JSON.stringify(obj)
